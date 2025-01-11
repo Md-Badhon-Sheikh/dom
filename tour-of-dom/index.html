@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my dom</h1>
+    </header>
+    <main>
+        <h1>My Awesome dom</h1>
+
+        <ul>
+            <li>Jalali Set</li>
+            <li>Shafayet</li>
+            <li>Bonobash</li>
+            <li>Dom de baba dom de..</li>
+        </ul>
+    </main>
+
+    <script src="js/dom.js"></script>
+    <script>
+        console.log('Adding js inside the html file');
+        
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li);
+        }
+
+        const allHeading = document.getElementsByTagName('h1');
+        for(const h1 of allHeading){
+            console.log(h1.innerText);
+        }
+    </script>
+</body>
+</html>
