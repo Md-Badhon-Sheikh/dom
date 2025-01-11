@@ -8,10 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to my dom</h1>
+        <section>
+            <h1>Welcome to my dom</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nobis, autem ipsam omnis temporibus facere error facilis impedit, dolore amet nisi neque iusto ad quam dolor, voluptatem rem? Dolores, eveniet.</p>
+        </section>
     </header>
     <main>
-        <h1>My Awesome dom</h1>
+        <section>
+            <h1>My Awesome dom</h1>
 
         <ul>
             <li>Jalali Set</li>
@@ -19,6 +23,29 @@
             <li>Bonobash</li>
             <li>Dom de baba dom de..</li>
         </ul>
+        </section>
+
+        <section>
+            <h1 id="fruits">Fruits i like</h1>
+
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>Dom de baba dom de..</li>
+        </ul>
+        </section>
+
+        <section>
+            <h1>Places I like to visit</h1>
+
+        <ul>
+            <li class="places">Sondorban</li>
+            <li class="places">Bandarban</li>
+            <li class="places">KataBan</li>
+            <li class="places">Shallban</li>
+        </ul>
+        </section>
     </main>
 
     <script src="js/dom.js"></script>
@@ -28,12 +55,21 @@
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for(const li of liCollection){
-            console.log(li);
+            // console.log(li);
         }
 
         const allHeading = document.getElementsByTagName('h1');
         for(const h1 of allHeading){
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
+        }
+
+        const fruitsTitle = document.getElementById('fruits');
+        // console.log(fruits.innerText);
+        fruitsTitle.innerText = 'change by fruits to Javascript';
+
+        const places = document.getElementsByClassName('places');
+        for(const place of places){
+            console.log(place.innerText);
         }
     </script>
 </body>
